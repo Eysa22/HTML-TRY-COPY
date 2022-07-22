@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Things I forgot to add. */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.home-image--wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.home-image{
+    width: 80%;
+}
+
+/* Things I forgot to add. */
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    background-color: #cafdff;
+}
+
+a{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.logo{
+    width: 300px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+header{
+    background-color: #eadcff;
+    min-height: calc(100vh - 70px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-phone1{
+    width: 50%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 72px;
+}
+
+.subheader{
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+
+button{
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+#about,
+#discord,
+#contact,
+footer {
+    padding: 48px 0;
+}
+
+/*
+
+ABOUT
+
+*/
+
+#about{
+    background-color: #f8ffdc;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+main section,
+footer {
+    padding: 48px 0;
+}
+
+.about-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-description--wrapper{
+    width: 60%;
+    padding: 0 24px;
+}
+
+.about-description--para{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.image-content{
+    width: 40%;
+    padding: 0 24px;
+}
+
+img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+/*
+
+DISCORD
+
+*/
+
+#discord{
+    background-color: #cefeff;
+}
+
+/*
+
+DISCORD
+
+*/
+
+#contact{
+    background-color: #dce9ff;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input,
+textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+input{
+    height: 40px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo{
+    max-width: 480px ;
+    margin-bottom: 16px;
+}
+
+.footer-links{
+    margin-bottom: 30px;
+}
+
+.footer-link{
+    padding: 0 16px;
+}
+
+/* small phones, tablets, large smartphones */
+
+
+@media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .media-phone1, .home-image--wrapper {
+      width: 100%;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .media-phone1 {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 60px;
+    }
+  
+    .subheader {
+      text-align: center;
+      font-size: 28px;
+    }
+  
+    .about-description {
+      flex-direction: column;
+    }
+  
+    .about-description--wrapper,
+    .image-content {
+      width: 100%;
+    }
+  
+    #discord .about-description {
+      flex-direction: column-reverse;
+    }
+  
+    form {
+      padding: 0 24px;
+    }
+  
+    footer {
+      padding: 48px 24px;
+    }
+  
+    .footer-logo {
+      max-width: 400px;
+    }
+  
+    .footer-link {
+      padding: 0 8px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo {
+      max-width: 320px;
+    }
+  
+    .footer-link {
+      font-size: 16px;
+    }
+  }
