@@ -9,6 +9,10 @@
 
 }
 
+.no__cursor{
+    cursor: no-drop;
+}
+
 /* Things I forgot to add. */
 
 html{
